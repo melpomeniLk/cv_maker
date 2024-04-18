@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    /* Additional CSS properties for body if needed */
+}
+
+.cv-container {
+    display: flex;
+    /*border: 1px solid #ddd; /* Fade border */
+}
+
+.left-column {
+    width: 30%;
+    background-color: #e0f2f1; /* Pale background */
+}
+
+.right-column {
+    width: 70%;
+}
+
+.section {
+    padding: 20px;
+   /* border-bottom: 1px solid #ddd; /* Bottom border */
+}
+
+#edit-btn, #print-btn {
+    margin-top: 20px;
+}
+
+/* Hide buttons for print */
+@media print {
+    #edit-btn, #print-btn {
+        display: none;
+    }
+  
+  body {
+    margin: 0;
+    /* Additional CSS properties for body if needed */
+  }
+  
+}

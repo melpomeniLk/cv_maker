@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive CV Maker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="cv-container">
+        <div class="left-column">
+            <div class="section">
+                <p contenteditable="false">123 Main Street, Cityville</p>
+                <p contenteditable="false">Phone: 555-1234</p>
+                <p contenteditable="false">Email: example@example.com</p>
+            </div>
+            <div class="section">
+                <h2>Education</h2>
+                <p>Bachelor of Science in Computer Science</p>
+                <p>University of Example, 2014-2018</p>
+            </div>
+            <div class="section">
+                <h2>Languages</h2>
+                <p>English (Fluent)</p>
+                <p>Spanish (Intermediate)</p>
+            </div>
+            <div class="section">
+                <h2>Skills</h2>
+                <p>JavaScript, HTML, CSS</p>
+                <p>Python, Java</p>
+            </div>
+        </div>
+        <div class="right-column">
+            <div class="section">
+                <h1>Name</h1>
+            </div>
+            <div class="section">
+                <h2>Experience</h2>
+                <p>Software Engineer at ABC Company, 2018-2022</p>
+                <p>Web Developer at XYZ Inc., 2016-2018</p>
+            </div>
+            <div class="section">
+                <h2>Projects</h2>
+                <p>Project A: Developed a web application using React</p>
+                <p>Project B: Created a mobile app for iOS and Android</p>
+            </div>
+            <div class="section">
+                <h2>Courses</h2>
+                <p>Advanced Web Development Course, 2019</p>
+                <p>Data Structures and Algorithms, 2017</p>
+            </div>
+        </div>
+    </div>
+    <button id="edit-btn">Edit</button>
+    <button id="print-btn" onclick="window.print();">Print</button>
+    <script src="script.js"></script>
+</body>
+</html>
