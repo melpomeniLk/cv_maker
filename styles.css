@@ -3,24 +3,46 @@ body {
     /* Additional CSS properties for body if needed */
 }
 
-.cv-container {
+.pi-item i {
+	padding-right: 1rem;
+	width: 25px;
+}
+
+.pi-item a {
+	color: unset;
+}
+
+.rest-info,
+.personal-info {
     display: flex;
     /*border: 1px solid #ddd; /* Fade border */
 }
 
 .left-column {
-    width: 30%;
+    /*width: 30%;*/
     background-color: #e0f2f1; /* Pale background */
 }
 
 .right-column {
-    width: 70%;
+   /* width: 70%;*/
 }
 
 .section {
-    padding: 20px;
+    padding: 10px;
    /* border-bottom: 1px solid #ddd; /* Bottom border */
 }
+
+.section-title {
+	display: flex;
+    justify-content: space-between;
+}
+
+.section .skills {
+	display: grid;
+    grid-template-columns: repeat(2, auto); /* Two columns */
+    gap: 5px;
+}
+
 
 #edit-btn, #print-btn {
     margin-top: 20px;
@@ -28,13 +50,13 @@ body {
 
 /* Hide buttons for print */
 @media print {
-    #edit-btn, #print-btn {
+    #edit-btn, #print-btn, #left-bg-color {
         display: none;
     }
   
-  body {
+  /* body {
     margin: 0;
-    /* Additional CSS properties for body if needed */
-  }
+    Additional CSS properties for body if needed 
+  } */
   
 }

@@ -5,54 +5,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive CV Maker</title>
     <link rel="stylesheet" href="styles.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+	<div class="edit-container">
+		<button id="edit-btn">Edit</button>
+		<button id="print-btn" onclick="window.print();">Print</button>
+		<button id="left-bg-color">Choose color for left column</button>
+	</div> 
     <div class="cv-container">
-        <div class="left-column">
+		<div class="personal-info">
+			<div class="left-column section col-4">
+				<!-- <div class="pi-item">
+					<i class="fa-solid fa-location-dot"></i>
+					<span contenteditable="false">address</span>
+				</div>
+				<div class="pi-item">
+					<i class="fa-solid fa-phone"></i>
+					<span contenteditable="false">telephone</span>
+				</div> -->
+				<div class="pi-item">
+					<i class="fa-solid fa-envelope"></i>
+					<span>example@gmail.com</span>
+				</div>
+				<div class="pi-item">
+					<i class="fa-brands fa-linkedin-in"></i>
+					<span><a href="https://www.linkedin.com/" contenteditable="false">profile-link/</a></span>
+				</div>
+				<div class="pi-item">
+					<i class="fa-solid fa-globe"></i>
+					<span><a href="https://codepen.io/menialk" contenteditable="false">website link</a></span>
+				</div>
+            </div>
+			<div class="right-column section col-8">
+                <h2>Ada Lovelace</h2>
+				<div contenteditable="false">Georgia, NY</div>
+				<div contenteditable="false">+30 55-12-986</div>
+            </div>
+		</div>
+		<div class="rest-info">
+        <div class="left-column col-4">
+            
             <div class="section">
-                <p contenteditable="false">123 Main Street, Cityville</p>
-                <p contenteditable="false">Phone: 555-1234</p>
-                <p contenteditable="false">Email: example@example.com</p>
+                <h4>Skills</h4>
+				<div class="skills">
+                <p>Management Skills</p>
+                <p>Creativity</p>
+                <p>Negotiation</p>
+                <p>Python</p>
+                <p>Critical Thinking</p>
+                <p>Leadership</p>
+				</div>
             </div>
             <div class="section">
-                <h2>Education</h2>
-                <p>Bachelor of Science in Computer Science</p>
-                <p>University of Example, 2014-2018</p>
+                <h4>Languages</h4>
+                <p>Spanish (Native)</p>
+                <p>English (Professional)</p>
             </div>
-            <div class="section">
-                <h2>Languages</h2>
-                <p>English (Fluent)</p>
-                <p>Spanish (Intermediate)</p>
-            </div>
-            <div class="section">
-                <h2>Skills</h2>
-                <p>JavaScript, HTML, CSS</p>
-                <p>Python, Java</p>
+            
+			<div class="section">
+                <h4>Certifications</h4>
+                <p>Lorem ipsum dolor sit amet - Vestibulum </p>
+                <p> Ut aliquam augue- 2024</p>
             </div>
         </div>
-        <div class="right-column">
+        <div class="right-column col-8">
+            
             <div class="section">
-                <h1>Name</h1>
+                <h4>Experience</h4>
+				<div class="exp-row">
+				<h6>Comapany Name</h6>
+				<div class="section-title">
+					<div>Your Job Position here</div>
+					<div>Month Year - Month Year</div>
+				</div>
+				 <ul>
+					<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sagittis pretium nisl, nec commodo est. </li>
+					<li>Fusce laoreet consequat sapien</li>
+					<li>Maecenas sed nulla eget velit tristique pharetra</li>
+				</ul> 
+				</div>
+				<div class="exp-row">
+				<h6>Company name</h6>
+				<div class="section-title">
+					<div>Your Job Position here</div>
+					<div>Month Year - Month Year</div>
+				</div>
+				<ul>
+					<li>Aenean nisi neque, rhoncus in ex eget, egestas pharetra sapien. In vehicula efficitur risus a eleifend </li>
+					<li>Preparing shipping documents, invoices and sales orders in SAP system</li>
+					<li>Nulla sit amet tortor in purus auctor tristique. Cras euismod metus at augue</li>
+				</ul>
+				</div>
+            </div>
+			<div class="section">
+                <h4>Education</h4>
+                <h6>Your Institution Name</h6>
+                <p>Your Degree Name, Start Year - End Year</p>
             </div>
             <div class="section">
-                <h2>Experience</h2>
-                <p>Software Engineer at ABC Company, 2018-2022</p>
-                <p>Web Developer at XYZ Inc., 2016-2018</p>
+                <h4>Category Name</h4>
+				<div class="exp-row">
+				<div class="section-title">
+					<div>Project Title -  Some details</div>
+				</div>
+					<p>Description in Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+				</div>
+				<div class="exp-row">
+				<div class="section-title">
+					<div>Another title - Something</div>
+				</div>
+					<p>Vestibulum pellentesque augue in lobortis ullamcorper</p>
+				</div>
             </div>
-            <div class="section">
-                <h2>Projects</h2>
-                <p>Project A: Developed a web application using React</p>
-                <p>Project B: Created a mobile app for iOS and Android</p>
-            </div>
-            <div class="section">
-                <h2>Courses</h2>
-                <p>Advanced Web Development Course, 2019</p>
-                <p>Data Structures and Algorithms, 2017</p>
-            </div>
+            
         </div>
+		</div>
     </div>
-    <button id="edit-btn">Edit</button>
-    <button id="print-btn" onclick="window.print();">Print</button>
-    <script src="script.js"></script>
+   
 </body>
 </html>
