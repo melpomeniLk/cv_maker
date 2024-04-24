@@ -1,6 +1,36 @@
+:root {
+    --background-color: #e0f2f1;
+}
+
 body {
     font-family: Arial, sans-serif;
     /* Additional CSS properties for body if needed */
+}
+
+
+.page-container {
+    width: 80%;
+    background-color: #f9fbfd;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.edit-container {
+    background-color:#edf2fa;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+.cv-container {
+    background-color: #fff;
+	border: 1px solid grey;
+	width: 210mm; /* Width of A4 page */
+    height: 297mm; /* Height of A4 page */
+    margin: 40px auto;
+    padding: 20px; /* Add padding for content */
+    box-sizing: border-box; /* Include padding in total width */
 }
 
 .pi-item i {
@@ -20,7 +50,7 @@ body {
 
 .left-column {
     /*width: 30%;*/
-    background-color: #e0f2f1; /* Pale background */
+    background-color: var(--background-color); /* Pale background */
 }
 
 .right-column {
@@ -29,6 +59,7 @@ body {
 
 .section {
     padding: 10px;
+    position: relative;
    /* border-bottom: 1px solid #ddd; /* Bottom border */
 }
 
@@ -44,13 +75,24 @@ body {
 }
 
 
-#edit-btn, #print-btn {
-    margin-top: 20px;
+#edit-btn, #add-btn {
+    display: none;/* Hide edit button by default */
+    position: absolute;
+    right: 0;
+    z-index: 1; /* Ensure edit button appears above other content */
 }
 
-/* Hide buttons for print */
+#add-btn {
+    right: 35px;
+
+}
+.section:hover #edit-btn,
+.section:hover #add-btn {
+    display: block; /* Show edit button when hovering over section */
+}
+
 @media print {
-    #edit-btn, #print-btn, #left-bg-color {
+    .edit-container {
         display: none;
     }
   
