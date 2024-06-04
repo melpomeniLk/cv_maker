@@ -21,16 +21,16 @@ body {
     width: 100%;
     text-align: center;
     padding: 10px;
-    margin: 10px 80px;
+    /*margin: 10px 80px;*/
     display: flex;
-    justify-content: space-around;
-    align-content: center;
+    justify-content: space-evenly;
+    align-items: baseline;
 }
 
 .cv-container {
     background-color: #fff;
     border: 1px solid #edf2fa;
-	  width: 210mm; /* Width of A4 page */
+	width: 210mm; /* Width of A4 page */
     height: 297mm; /* Height of A4 page */
     margin: 40px auto;
     padding: 20px; /* Add padding for content */
